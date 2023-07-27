@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3325784276703324219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3325784276703324217}
+  - component: {fileID: 3325784276703324216}
+  m_Layer: 0
+  m_Name: ChampionMgr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3325784276703324217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3325784276703324219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 241.50087, y: 283.06415, z: 2216.0618}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3325784276703324216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3325784276703324219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c964287135ed29941acf0c4f93d00985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getChampionRules:
+  - vCountRange: {x: 0, y: 20}
+    nGetChampion: 01000000
+  - vCountRange: {x: 20, y: 30}
+    nGetChampion: 02000000
+  - vCountRange: {x: 30, y: 40}
+    nGetChampion: 0200000001000000
+  - vCountRange: {x: 40, y: 50}
+    nGetChampion: 0300000001000000
+  - vCountRange: {x: 50, y: 999}
+    nGetChampion: 030000000200000001000000

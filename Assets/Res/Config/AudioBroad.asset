@@ -1,0 +1,2328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87358fb238865e49bc4902aca37b9ec, type: 3}
+  m_Name: AudioBroad
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 4433208a21e70c540a5f78121f66001c, type: 3}
+    - {fileID: 8300000, guid: 59c881d9a71eac745803079c566fd9d7, type: 3}
+    - {fileID: 8300000, guid: 1e230e6a3ad3fa741aead16826af2057, type: 3}
+    - {fileID: 8300000, guid: 8c5db60f47dae954c83b9ca69ad2ca2d, type: 3}
+    - {fileID: 8300000, guid: a548a9a38c364f7418199d8e44beac42, type: 3}
+    - {fileID: 8300000, guid: 6323b5817b0595548a568b5d2558ec55, type: 3}
+    - {fileID: 8300000, guid: e502d661c81bb5b4badb6630e081b14c, type: 3}
+    - {fileID: 8300000, guid: 977771a7ec170be40aab1575b82929f1, type: 3}
+    - {fileID: 8300000, guid: d479f0bf386478944b038f22015c4961, type: 3}
+    - {fileID: 8300000, guid: 95f3b6d5967029244ad5f6aaffe3e4df, type: 3}
+    - {fileID: 8300000, guid: 1cf1b40b6a7d0b148a29bf421d855961, type: 3}
+    - {fileID: 8300000, guid: a80100d77ad72154e821cecb3ebac032, type: 3}
+    - {fileID: 8300000, guid: 9953516b7eb5b6a4cb27bb832438510c, type: 3}
+    - {fileID: 8300000, guid: e107f0e58a326b74996af0f317d4fafd, type: 3}
+    - {fileID: 8300000, guid: 14621baae588fd849b848d737f44933b, type: 3}
+    - {fileID: 8300000, guid: 9f27b42c0c040024a9c3a5dd7d939fcf, type: 3}
+    - {fileID: 8300000, guid: 90c9eea897831f04f9f12e43486603f8, type: 3}
+    - {fileID: 8300000, guid: d1fd130cd4a308740b37de8ca4725315, type: 3}
+    - {fileID: 8300000, guid: 89a6333702a30dc44888cbdee6ecf7ef, type: 3}
+    - {fileID: 8300000, guid: dd20f8a525d67514480fd9da5890441b, type: 3}
+    - {fileID: 8300000, guid: 1a3407d89a6883a47954a70ed93ff05b, type: 3}
+    - {fileID: 8300000, guid: 541af79fce3fea34c9cd8dd394278cde, type: 3}
+    - {fileID: 8300000, guid: 800466defca4650498263f18d992a3b2, type: 3}
+    - {fileID: 8300000, guid: 3db3b1c4e282e0d4abffc223d1caa23b, type: 3}
+    - {fileID: 8300000, guid: 519fefbb4dbf2ee46bf7d73930886ccc, type: 3}
+    - {fileID: 8300000, guid: 317d4e14b8b3a7a4b8f680d7a42e8466, type: 3}
+    - {fileID: 8300000, guid: 21bbfae47be5efd4ca51e5a8938e7220, type: 3}
+    - {fileID: 8300000, guid: cbbf8414489d35c47a17e8fb9ddc649e, type: 3}
+    - {fileID: 8300000, guid: 89c7db996fe8ae342b86595117c2a6e7, type: 3}
+    - {fileID: 8300000, guid: 49afe997e927d0a4b9cf0c6707068e68, type: 3}
+    - {fileID: 8300000, guid: b99d6b83642c8024884d8172786514dd, type: 3}
+    - {fileID: 8300000, guid: 69ce2ad3a7757fd49990d84db54dfe67, type: 3}
+    - {fileID: 8300000, guid: 2e9e0cb3ab1c634478b79b7375f604ac, type: 3}
+    - {fileID: 8300000, guid: ce0e01287ff85e34aba7cba40c9fb03d, type: 3}
+    - {fileID: 8300000, guid: 44d29f24b486df3488afd406a5bceadf, type: 3}
+    - {fileID: 8300000, guid: 20cf1c357c75c7e4db9bd3b9bd70d3b0, type: 3}
+    - {fileID: 8300000, guid: f68b0bbfdddc7c74b83a8e19767bc46f, type: 3}
+    - {fileID: 8300000, guid: 83be0b7988b89dd4297d05a83a851faa, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: dicInfos
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[CConfigFishBroad+EMBroadModel,
+        Assembly-CSharp],[CConfigFishBroadInfo, Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[CConfigFishBroad+EMBroadModel,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 2|CConfigFishBroadInfo, Assembly-CSharp
+    - Name: dicConfigs
+      Entry: 7
+      Data: 3|System.Collections.Generic.Dictionary`2[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp],[System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo,
+        Assembly-CSharp]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 4|System.Collections.Generic.EnumEqualityComparer`1[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 6|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 0
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 8|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 1
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 10|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 2
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 12|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 3
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 14|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 4
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 15|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 16|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 5
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 17|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 18|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 6
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 19|CConfigFishBroadInfo, Assembly-CSharp
+    - Name: dicConfigs
+      Entry: 7
+      Data: 20|System.Collections.Generic.Dictionary`2[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp],[System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo,
+        Assembly-CSharp]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 21|System.Collections.Generic.EnumEqualityComparer`1[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 22|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 23|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 7
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 24|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 8
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 25|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 26|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 9
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 27|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 28|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 10
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 29|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 11
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 30|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 31|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 12
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 32|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 33|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 13
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 34|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 14
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 35|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 36|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 15
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 37|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 38|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 16
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 39|CConfigFishBroadInfo, Assembly-CSharp
+    - Name: dicConfigs
+      Entry: 7
+      Data: 40|System.Collections.Generic.Dictionary`2[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp],[System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo,
+        Assembly-CSharp]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 41|System.Collections.Generic.EnumEqualityComparer`1[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 42|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 43|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 17
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 44|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 45|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 18
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 46|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 47|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 19
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 48|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 49|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 20
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 50|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 51|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 21
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 52|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 53|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 22
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 54|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 55|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 23
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 56|CConfigFishBroadInfo, Assembly-CSharp
+    - Name: dicConfigs
+      Entry: 7
+      Data: 57|System.Collections.Generic.Dictionary`2[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp],[System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo,
+        Assembly-CSharp]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 58|System.Collections.Generic.EnumEqualityComparer`1[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 59|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 60|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 24
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 61|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 62|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 25
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 63|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 64|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 26
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 65|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 66|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 27
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 67|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 68|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 28
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 69|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 70|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 29
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 71|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 72|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 30
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 73|CConfigFishBroadInfo, Assembly-CSharp
+    - Name: dicConfigs
+      Entry: 7
+      Data: 74|System.Collections.Generic.Dictionary`2[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp],[System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo,
+        Assembly-CSharp]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 75|System.Collections.Generic.EnumEqualityComparer`1[[CConfigFishBroad+EMBroadType,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 76|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 77|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 31
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 78|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 79|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 32
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 80|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 81|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 33
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 82|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 83|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 34
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 84|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 85|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 35
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 86|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 87|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 36
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 88|System.Collections.Generic.List`1[[CAudioMgr+CAudioSlottInfo, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 89|CAudioMgr+CAudioSlottInfo, Assembly-CSharp
+    - Name: clip
+      Entry: 10
+      Data: 37
+    - Name: vClipRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bLoop
+      Entry: 5
+      Data: false
+    - Name: fVolum
+      Entry: 4
+      Data: 1
+    - Name: fPitch
+      Entry: 4
+      Data: 1
+    - Name: fBlend
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  listBroadModelName:
+  - "\u65E0"
+  - "\u5973\u58F01"
+  - "\u5973\u58F02"
+  - "\u5973\u58F03"
+  - "\u5973\u58F04"
+  - "\u5973\u58F05"

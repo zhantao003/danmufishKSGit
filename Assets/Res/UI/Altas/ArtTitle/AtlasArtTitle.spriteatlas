@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AtlasArtTitle
+  serializedVersion: 2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 64331bd25f1382a4ca3df43084a10131, type: 3}
+    - {fileID: 2800000, guid: 8c9012e56b3294b488cce98d931cfa93, type: 3}
+    - {fileID: 2800000, guid: 0d5d78bcfef044d4f9c585403f242b90, type: 3}
+    - {fileID: 2800000, guid: 358947174090ee14a82ed33fd95216e4, type: 3}
+    - {fileID: 2800000, guid: 7556793ddb8633d45afc9862b55f8d98, type: 3}
+    - {fileID: 2800000, guid: eead4f6a4d6b90149b64623fa6de0767, type: 3}
+    - {fileID: 2800000, guid: 61637c23a3942cc4382ca427daa3becb, type: 3}
+    - {fileID: 2800000, guid: f07e4f561e8bf5d42a9966dca798060c, type: 3}
+    - {fileID: 2800000, guid: 0c34b8deb0b05204f895b8e2808a4f55, type: 3}
+    - {fileID: 2800000, guid: 591b5853b94577a4cbff4de321884ef9, type: 3}
+    - {fileID: 2800000, guid: d5866a5dd70b28a448e393ad25cf5354, type: 3}
+    - {fileID: 2800000, guid: 4b7daef226d23ae4db9eea9d3cadb40a, type: 3}
+    - {fileID: 2800000, guid: 99db0c1e4abbc934d81139551f405986, type: 3}
+    - {fileID: 2800000, guid: c0b28536bfe331e4da0ebcd74b50d1e0, type: 3}
+    - {fileID: 2800000, guid: 6e3dbecf13022834aa68957ccc889a73, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 64331bd25f1382a4ca3df43084a10131, type: 3}
+  - {fileID: 21300000, guid: 4b7daef226d23ae4db9eea9d3cadb40a, type: 3}
+  - {fileID: 21300000, guid: 61637c23a3942cc4382ca427daa3becb, type: 3}
+  - {fileID: 21300000, guid: 591b5853b94577a4cbff4de321884ef9, type: 3}
+  - {fileID: 21300000, guid: 8c9012e56b3294b488cce98d931cfa93, type: 3}
+  - {fileID: 21300000, guid: c0b28536bfe331e4da0ebcd74b50d1e0, type: 3}
+  - {fileID: 21300000, guid: f07e4f561e8bf5d42a9966dca798060c, type: 3}
+  - {fileID: 21300000, guid: 358947174090ee14a82ed33fd95216e4, type: 3}
+  - {fileID: 21300000, guid: eead4f6a4d6b90149b64623fa6de0767, type: 3}
+  - {fileID: 21300000, guid: 0d5d78bcfef044d4f9c585403f242b90, type: 3}
+  - {fileID: 21300000, guid: 7556793ddb8633d45afc9862b55f8d98, type: 3}
+  - {fileID: 21300000, guid: d5866a5dd70b28a448e393ad25cf5354, type: 3}
+  - {fileID: 21300000, guid: 99db0c1e4abbc934d81139551f405986, type: 3}
+  - {fileID: 21300000, guid: 0c34b8deb0b05204f895b8e2808a4f55, type: 3}
+  - {fileID: 21300000, guid: 6e3dbecf13022834aa68957ccc889a73, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - AvatarTitle
+  - ShowTitle
+  - LocalTreasureTitle(1)
+  - OuRankTitle
+  - CodeTitle
+  - UIShowImgTitle
+  - MingRen
+  - GetRoleTitle
+  - LocalRecordTitle
+  - GetBoatTitle
+  - HelpTitle
+  - RankTitle
+  - SpecialtyTitle
+  - MsgTitle
+  - BaoZangShopTitle
+  m_RenderDataMap: {}
+  m_Tag: AtlasArtTitle
+  m_IsVariant: 0
+  m_IsPlaceholder: 0
