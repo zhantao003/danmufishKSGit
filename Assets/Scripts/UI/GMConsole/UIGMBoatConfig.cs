@@ -16,6 +16,7 @@ public class UIGMBoatConfig : MonoBehaviour
     public GameObject objSlotRoot;
     public InputField uiInputZhekou;
 
+    List<CGMFishBoatInfo> listBoatInfos = new List<CGMFishBoatInfo>();
     List<UIGMBoatConfigSlot> listSlots = new List<UIGMBoatConfigSlot>();
 
     public enum EMSortType
@@ -28,6 +29,9 @@ public class UIGMBoatConfig : MonoBehaviour
 
     public EMSortType emCurSort = EMSortType.Down;
 
+    public ST_UnitFishBoat.EMRare emCurRare = ST_UnitFishBoat.EMRare.R;
+
+    public Button[] arrBtnRare;
 
     // Start is called before the first frame update
     void Start()
@@ -39,15 +43,33 @@ public class UIGMBoatConfig : MonoBehaviour
     {
         uiInputZhekou.text = zhekou.ToString();
 
+        listBoatInfos.Clear();
+        listBoatInfos.AddRange(listInfos);
+
+        SetRare(emCurRare);
+    }
+
+    void SetRare(ST_UnitFishBoat.EMRare rare)
+    {
+        for(int i=0; i<arrBtnRare.Length; i++)
+        {
+            arrBtnRare[i].interactable = !((int)(rare - 1) == i);
+        }
+
         for (int i = 0; i < listSlots.Count; i++)
         {
             Destroy(listSlots[i].gameObject);
         }
         listSlots.Clear();
 
-        for (int i = 0; i < listInfos.Count; i++)
+        for (int i = 0; i < listBoatInfos.Count; i++)
         {
-            NewSlot(listInfos[i], (i == listInfos.Count - 1));
+            ST_UnitFishBoat pTBLBoatInfo = CTBLHandlerUnitFishBoat.Ins.GetInfo(listBoatInfos[i].boatId);
+            if (pTBLBoatInfo == null) continue;
+
+            if (pTBLBoatInfo.emRare != rare) continue;
+
+            NewSlot(listBoatInfos[i], (i == listBoatInfos.Count - 1));
         }
 
         SortSlot();
@@ -212,6 +234,12 @@ public class UIGMBoatConfig : MonoBehaviour
         }
 
         Init(listInfos, float.Parse(uiInputZhekou.text));
+    }
+
+    public void OnClickRare(int value)
+    {
+        emCurRare = (ST_UnitFishBoat.EMRare)value;
+        SetRare(emCurRare);
     }
 
     public void OnClickExit()
