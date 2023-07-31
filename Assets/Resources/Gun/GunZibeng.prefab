@@ -253,7 +253,7 @@ MonoBehaviour:
   fShootTime: 0.4
   fHitTime: 0.6
   fLifeTime: 1
-  vDmgRange: {x: 32000, y: 37000}
+  vDmgRange: {x: 64000, y: 74000}
   szEffShoot: Effect/Gun/effGunShoot001
   szBeam: Effect/Gun/effGunBeam001
   szEffHit: Effect/Gun/effGunHit001

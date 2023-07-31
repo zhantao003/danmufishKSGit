@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 65b3df9497a17624ba6b49922efdeb2c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bit_Longsword:black_longsword
+    100004: Bit_Longsword:black_longsword_root
+    100006: Bit_Longsword:blue_longsword
+    100008: Bit_Longsword:blue_longsword_root
+    100010: Bit_Longsword:green_longsword
+    100012: Bit_Longsword:green_longsword_root
+    100014: Bit_Longsword:orange_longsword
+    100016: Bit_Longsword:orange_longsword_root
+    100018: Bit_Longsword:pink_longsword
+    100020: Bit_Longsword:pink_longsword_root
+    100022: Bit_Longsword:purple_longsword
+    100024: Bit_Longsword:purple_longsword_root
+    100026: Bit_Longsword:red_longsword
+    100028: Bit_Longsword:red_longsword_root
+    100030: Bit_Longsword:skyblue_longsword
+    100032: Bit_Longsword:skyblue_longsword_root
+    100034: Bit_Longsword:white_longsword
+    100036: Bit_Longsword:white_longsword_root
+    100038: Bit_Longsword:yellow_longsword
+    100040: Bit_Longsword:yellow_longsword_root
+    400000: //RootNode
+    400002: Bit_Longsword:black_longsword
+    400004: Bit_Longsword:black_longsword_root
+    400006: Bit_Longsword:blue_longsword
+    400008: Bit_Longsword:blue_longsword_root
+    400010: Bit_Longsword:green_longsword
+    400012: Bit_Longsword:green_longsword_root
+    400014: Bit_Longsword:orange_longsword
+    400016: Bit_Longsword:orange_longsword_root
+    400018: Bit_Longsword:pink_longsword
+    400020: Bit_Longsword:pink_longsword_root
+    400022: Bit_Longsword:purple_longsword
+    400024: Bit_Longsword:purple_longsword_root
+    400026: Bit_Longsword:red_longsword
+    400028: Bit_Longsword:red_longsword_root
+    400030: Bit_Longsword:skyblue_longsword
+    400032: Bit_Longsword:skyblue_longsword_root
+    400034: Bit_Longsword:white_longsword
+    400036: Bit_Longsword:white_longsword_root
+    400038: Bit_Longsword:yellow_longsword
+    400040: Bit_Longsword:yellow_longsword_root
+    2300000: Bit_Longsword:black_longsword
+    2300002: Bit_Longsword:blue_longsword
+    2300004: Bit_Longsword:green_longsword
+    2300006: Bit_Longsword:orange_longsword
+    2300008: Bit_Longsword:pink_longsword
+    2300010: Bit_Longsword:purple_longsword
+    2300012: Bit_Longsword:red_longsword
+    2300014: Bit_Longsword:skyblue_longsword
+    2300016: Bit_Longsword:white_longsword
+    2300018: Bit_Longsword:yellow_longsword
+    2300020: //RootNode
+    3300000: Bit_Longsword:black_longsword
+    3300002: Bit_Longsword:blue_longsword
+    3300004: Bit_Longsword:green_longsword
+    3300006: Bit_Longsword:orange_longsword
+    3300008: Bit_Longsword:pink_longsword
+    3300010: Bit_Longsword:purple_longsword
+    3300012: Bit_Longsword:red_longsword
+    3300014: Bit_Longsword:skyblue_longsword
+    3300016: Bit_Longsword:white_longsword
+    3300018: Bit_Longsword:yellow_longsword
+    3300020: //RootNode
+    4300000: Bit_Longsword:black_longsword
+    4300002: Bit_Longsword:red_longsword
+    4300004: Bit_Longsword:blue_longsword
+    4300006: Bit_Longsword:yellow_longsword
+    4300008: Bit_Longsword:green_longsword
+    4300010: Bit_Longsword:pink_longsword
+    4300012: Bit_Longsword:skyblue_longsword
+    4300014: Bit_Longsword:white_longsword
+    4300016: Bit_Longsword:purple_longsword
+    4300018: Bit_Longsword:orange_longsword
+    4300020: Bit_Longsword
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
