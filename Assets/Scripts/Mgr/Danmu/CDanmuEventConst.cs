@@ -55,7 +55,7 @@ public class CDanmuEventConst
     //public const string ChgAvatar2 = "huan";
     public const string ChgBoat = "»»´¬";
     public const string ExchangeBoat = "¶Ò´¬";
-    public const string ChgFishGan = "¸Í";
+    public const string ChgFishGan = "»»¸Í";
     public const string ExchangeFishGan = "¶Ò¸Í";
     public const string DarkDuel = "¾ö¶·";
     public const string SpecialDarkDuel = "º£¶·";

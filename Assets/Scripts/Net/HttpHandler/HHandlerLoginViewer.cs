@@ -87,7 +87,7 @@ public class HHandlerLoginViewer : INetEventHandler
 
         CHttpMgr.Instance.SendHttpMsg(CHttpConst.GetAvatarList, pReqParams);
         CHttpMgr.Instance.SendHttpMsg(CHttpConst.GetBoatList, pReqParams);
-        //CHttpMgr.Instance.SendHttpMsg(CHttpConst.GetFishGanList, pReqParamsOnlyUid);
+        CHttpMgr.Instance.SendHttpMsg(CHttpConst.GetFishGanList, pReqParamsOnlyUid);
         CHttpMgr.Instance.SendHttpMsg(CHttpConst.GetUserFishMat, pReqParamsOnlyUid);
         CHttpMgr.Instance.SendHttpMsg(CHttpConst.GetUserFishInfo, new HHandlerGetUserFishInfo(this.LoginOver), pReqParams, CHttpMgr.Instance.nReconnectTimes);
 

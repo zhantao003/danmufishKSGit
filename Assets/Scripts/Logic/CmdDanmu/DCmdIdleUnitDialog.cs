@@ -32,7 +32,7 @@ public class DCmdIdleUnitDialog : CDanmuCmdAction
             dm.content.StartsWith(CDanmuEventConst.ChgAvatar) ||
             //dm.content.StartsWith(CDanmuEventConst.ChgAvatar2) ||
             dm.content.Contains(CDanmuEventConst.Chaxun_Boat) ||
-            //dm.content.Contains(CDanmuEventConst.Chaxun_FishGan) ||
+            dm.content.Contains(CDanmuEventConst.Chaxun_FishGan) ||
             //dm.content == CDanmuEventConst.Chaxun_FesInfo ||
             //dm.content == CDanmuEventConst.Chaxun_ProAdd ||
             //dm.content == CDanmuEventConst.Chaxun_FishMat ||

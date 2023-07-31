@@ -305,10 +305,10 @@ public class CDanmuEventHandler : MonoBehaviour
         //    return CDanmuEventConst.ExchangeBoat;
         //}
 
-        //if (key.StartsWith(CDanmuEventConst.ChgFishGan))
-        //{
-        //    return CDanmuEventConst.ChgFishGan;
-        //}
+        if (key.StartsWith(CDanmuEventConst.ChgFishGan))
+        {
+            return CDanmuEventConst.ChgFishGan;
+        }
 
         //if (key.StartsWith(CDanmuEventConst.ExchangeFishGan))
         //{
