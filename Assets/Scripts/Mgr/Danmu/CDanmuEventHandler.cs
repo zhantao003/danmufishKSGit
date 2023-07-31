@@ -260,10 +260,10 @@ public class CDanmuEventHandler : MonoBehaviour
             return CDanmuEventConst.Chaxun_Boat;
         }
 
-        //if (key.StartsWith(CDanmuEventConst.Chaxun_FishGan))
-        //{
-        //    return CDanmuEventConst.Chaxun_FishGan;
-        //}
+        if (key.StartsWith(CDanmuEventConst.Chaxun_FishGan))
+        {
+            return CDanmuEventConst.Chaxun_FishGan;
+        }
 
         if (key.StartsWith(CDanmuEventConst.Chaxun_Avatar)) 
             //||
@@ -305,15 +305,15 @@ public class CDanmuEventHandler : MonoBehaviour
         //    return CDanmuEventConst.ExchangeBoat;
         //}
 
-        //if (key.StartsWith(CDanmuEventConst.ChgFishGan))
-        //{
-        //    return CDanmuEventConst.ChgFishGan;
-        //}
+        if (key.StartsWith(CDanmuEventConst.ChgFishGan))
+        {
+            return CDanmuEventConst.ChgFishGan;
+        }
 
-        //if (key.StartsWith(CDanmuEventConst.ExchangeFishGan))
-        //{
-        //    return CDanmuEventConst.ExchangeFishGan;
-        //}
+        if (key.StartsWith(CDanmuEventConst.ExchangeFishGan))
+        {
+            return CDanmuEventConst.ExchangeFishGan;
+        }
 
         //Match matchesFlag = Regex.Match(key.ToUpper(), @"^([A-Z])");
         //if (matchesFlag.Success)
