@@ -435,13 +435,13 @@ public class CAuctionMgr : MonoBehaviour
                                                  auctionResultInfo.nlFishCoin,
                                                  EMFishCoinAddFunc.Auction,
                                                  false);
-                    //赚了就记录一下富豪积分
-                    long nCoinLerp = auctionResultInfo.nlFishCoin - nBuyPrice;
-                    if (nCoinLerp > 0)
-                    {
-                        CPlayerNetHelper.AddWinnerInfo(uid, 0, nCoinLerp);
-                    }
-                    CFishRecordMgr.Ins.AddRecord(auctionResultInfo.nlFishCoin - nBuyPrice, pCurBaseInfo);
+                    ////赚了就记录一下富豪积分
+                    //long nCoinLerp = auctionResultInfo.nlFishCoin - nBuyPrice;
+                    //if (nCoinLerp > 0)
+                    //{
+                    //    CPlayerNetHelper.AddWinnerInfo(uid, 0, nCoinLerp);
+                    //}
+                    //CFishRecordMgr.Ins.AddRecord(auctionResultInfo.nlFishCoin - nBuyPrice, pCurBaseInfo);
                 }
                 else if (curTreasureInfo.treasureInfo.emAuctionLimitType == EMAuctionLimitType.Multiple &&
                          listAddPointPlayer != null)
@@ -454,13 +454,13 @@ public class CAuctionMgr : MonoBehaviour
                                                      auctionResultInfo.nlFishCoin,
                                                      EMFishCoinAddFunc.Auction,
                                                      false);
-                        //赚了就记录一下富豪积分
-                        long nCoinLerp = auctionResultInfo.nlFishCoin - nBuyPrice;
-                        if (nCoinLerp > 0)
-                        {
-                            CPlayerNetHelper.AddWinnerInfo(uid, 0, nCoinLerp);
-                        }
-                        CFishRecordMgr.Ins.AddRecord(auctionResultInfo.nlFishCoin - nBuyPrice, listAddPointPlayer[i]);
+                        ////赚了就记录一下富豪积分
+                        //long nCoinLerp = auctionResultInfo.nlFishCoin - nBuyPrice;
+                        //if (nCoinLerp > 0)
+                        //{
+                        //    CPlayerNetHelper.AddWinnerInfo(uid, 0, nCoinLerp);
+                        //}
+                        //CFishRecordMgr.Ins.AddRecord(auctionResultInfo.nlFishCoin - nBuyPrice, listAddPointPlayer[i]);
                     }
                 }
             };

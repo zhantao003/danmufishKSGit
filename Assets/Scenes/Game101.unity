@@ -149879,6 +149879,102 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[0].vCountRange.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[1].vCountRange.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[1].vCountRange.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[2].vCountRange.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[2].vCountRange.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[3].vCountRange.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[3].vCountRange.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[4].vCountRange.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[4].vCountRange.y
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[0].nGetChampion.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[1].nGetChampion.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[2].nGetChampion.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[3].nGetChampion.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[4].nGetChampion.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[0].nGetChampion.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[1].nGetChampion.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[2].nGetChampion.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[2].nGetChampion.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[3].nGetChampion.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[3].nGetChampion.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[4].nGetChampion.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[4].nGetChampion.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325784276703324216, guid: 10e550c8a78895047991be586b745a80, type: 3}
+      propertyPath: getChampionRulesByProfit.Array.data[4].nGetChampion.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3325784276703324217, guid: 10e550c8a78895047991be586b745a80, type: 3}
       propertyPath: m_RootOrder
       value: 15

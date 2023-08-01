@@ -15,10 +15,10 @@ public class UILocalRankRoot : MonoBehaviour
     public GameObject[] objTips;
     public int nCurShowIdx;
 
-    public void InitInfo(CGetChampionRule curChampionRule)
+    public void InitInfo(CGetChampionRule curChampionRuleByOuHuang, CGetChampionRule curChampionRuleByProfit)
     {
-        localRankResRoot.InitInfo(curChampionRule);
-        localProfitResRoot.InitInfo(curChampionRule);
+        localRankResRoot.InitInfo(curChampionRuleByOuHuang);
+        localProfitResRoot.InitInfo(curChampionRuleByProfit);
         ShowInfo();
     }
 

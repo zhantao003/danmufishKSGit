@@ -30,9 +30,9 @@ public class UIBattleModeInfo : UIBase
         tweenPos.Play();
     }
 
-    public void InitRankInfo(CGetChampionRule curChampionRule)
+    public void InitRankInfo(CGetChampionRule curChampionRuleByOuHuang, CGetChampionRule curChampionRuleByProfit)
     {
-        battleRankRoot.ShowRankInfo(curChampionRule);
+        battleRankRoot.ShowRankInfo(curChampionRuleByOuHuang, curChampionRuleByProfit);
 
         //CPlayerNetHelper.GetWinnerOuhuangRL("");
         //CPlayerNetHelper.GetWinnerRicherRL("");

@@ -44,8 +44,11 @@ public class CGiftGachaBox : MonoBehaviour
 
     CPlayerBaseInfo pPlayerInfo;
 
-    public void Init(string uid, long count, List<CGiftGachaBoxInfo> infos)
+    public EMDrawType emDrawType;
+
+    public void Init(string uid, long count, List<CGiftGachaBoxInfo> infos, EMDrawType drawType = EMDrawType.KongTou)
     {
+        emDrawType = drawType;
         nlPlayerUid = uid;
         lGuid = CHelpTools.GenerateId();
         lOwnerUID = uid;
@@ -177,7 +180,7 @@ public class CGiftGachaBox : MonoBehaviour
                 {
                     for(int i=0; i<listFinalInfos.Count; i++)
                     {
-                        uiGetAvatar.AddGiftGachaBoxSlot(pPlayerInfo, listFinalInfos[i]);
+                        uiGetAvatar.AddGiftGachaBoxSlot(pPlayerInfo, listFinalInfos[i], emDrawType);
                     }
                 }
             }

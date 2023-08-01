@@ -25,12 +25,12 @@ public class UILocalRankResRoot : MonoBehaviour
         {
             int index = i;// i + 1;
             int nGetChampionCount = 0;
-            if (i == 0)
+            if (curChampionRule != null &&
+                i < curChampionRule.nGetChampion.Length)
             {
-                nGetChampionCount = 1;
+                nGetChampionCount = curChampionRule.nGetChampion[i];
             }
-            
-            if(index >= listShowInfos.Count)
+            if (index >= listShowInfos.Count)
             {
                 arrRankSlots[i].objRoot.SetActive(false);
             }

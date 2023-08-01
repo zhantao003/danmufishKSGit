@@ -193,12 +193,13 @@ public class CBattleModeMgr : MonoBehaviour
             }
             else
             {
-                CGetChampionRule curChampionRule = CChampionMgr.Ins.GetCurRule();
+                CGetChampionRule curChampionRuleByOuHuang = CChampionMgr.Ins.GetCurRule();
+                CGetChampionRule curChampionRuleByProfit = CChampionMgr.Ins.GetCurRuleByProfit();
 
                 UIBattleModeInfo battleModeInfo = UIManager.Instance.GetUI(UIResType.BattleModeInfo) as UIBattleModeInfo;
                 if (battleModeInfo != null)
                 {
-                    battleModeInfo.InitRankInfo(curChampionRule);
+                    battleModeInfo.InitRankInfo(curChampionRuleByOuHuang, curChampionRuleByProfit);
                 }
 
                 List<ProfitRankInfo> listProfitInfos = CProfitRankMgr.Ins.GetRankInfos();
@@ -219,42 +220,38 @@ public class CBattleModeMgr : MonoBehaviour
                         pShowUnit.InitAvatar();
                     }
 
-                    if (curChampionRule != null)
+                    if (curChampionRuleByOuHuang != null &&
+                        curChampionRuleByProfit != null)
                     {
-                        for (int i = 0; i < curChampionRule.nGetChampion.Length; i++)
+                        ///欧皇皇冠收益
+                        for (int i = 0; i < curChampionRuleByOuHuang.nGetChampion.Length; i++)
                         {
-                            string szRankUID = string.Empty;
-                            string szProfitUID = string.Empty;
+                            string szOuHuangRankUID = string.Empty;
                             if (i < listOuHuangInfos.Count && 
                                 listOuHuangInfos[i] != null)
                             {
-                                szRankUID = listOuHuangInfos[i].nlUserUID;
+                                szOuHuangRankUID = listOuHuangInfos[i].nlUserUID;
                             }
+                            if(CHelpTools.IsStringEmptyOrNone(szOuHuangRankUID))
+                            {
+                                continue;
+                            }
+                            CPlayerNetHelper.AddWinnerInfo(szOuHuangRankUID, curChampionRuleByOuHuang.nGetChampion[i], 0);
+                        }
+                        ///富豪皇冠收益
+                        for (int i = 0; i < curChampionRuleByProfit.nGetChampion.Length; i++)
+                        {
+                            string szProfitUID = string.Empty;
                             if (i < listProfitInfos.Count &&
                                 listProfitInfos[i] != null)
                             {
                                 szProfitUID = listProfitInfos[i].nlUserUID;
                             }
-                            if(CHelpTools.IsStringEmptyOrNone(szRankUID) &&
-                               CHelpTools.IsStringEmptyOrNone(szProfitUID))
+                            if (CHelpTools.IsStringEmptyOrNone(szProfitUID))
                             {
                                 continue;
                             }
-                            if (szRankUID == szProfitUID)
-                            {
-                                CPlayerNetHelper.AddWinnerInfo(szRankUID, curChampionRule.nGetChampion[i] + 1, 0);
-                            }
-                            else
-                            {
-                                if (!CHelpTools.IsStringEmptyOrNone(szRankUID))
-                                {
-                                    CPlayerNetHelper.AddWinnerInfo(szRankUID, 1, 0);
-                                }
-                                if (!CHelpTools.IsStringEmptyOrNone(szProfitUID))
-                                {
-                                    CPlayerNetHelper.AddWinnerInfo(szProfitUID, curChampionRule.nGetChampion[i], 0);
-                                }
-                            }
+                            CPlayerNetHelper.AddWinnerInfo(szProfitUID, curChampionRuleByProfit.nGetChampion[i], 0);
                         }
                     }
                     else

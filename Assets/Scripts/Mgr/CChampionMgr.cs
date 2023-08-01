@@ -23,6 +23,8 @@ public class CChampionMgr : MonoBehaviour
 
     public CGetChampionRule[] getChampionRules;
 
+    public CGetChampionRule[] getChampionRulesByProfit;
+
     private void Awake()
     {
         ins = this;
@@ -40,6 +42,24 @@ public class CChampionMgr : MonoBehaviour
                nPlayerCount < getChampionRules[i].vCountRange.y)
             {
                 curRule = getChampionRules[i];
+            }
+        }
+
+        return curRule;
+    }
+
+    public CGetChampionRule GetCurRuleByProfit()
+    {
+        CGetChampionRule curRule = null;
+
+        int nPlayerCount = CPlayerMgr.Ins.GetAllIdleUnit().Count;
+
+        for (int i = 0; i < getChampionRulesByProfit.Length; i++)
+        {
+            if (nPlayerCount >= getChampionRulesByProfit[i].vCountRange.x &&
+               nPlayerCount < getChampionRulesByProfit[i].vCountRange.y)
+            {
+                curRule = getChampionRulesByProfit[i];
             }
         }
 

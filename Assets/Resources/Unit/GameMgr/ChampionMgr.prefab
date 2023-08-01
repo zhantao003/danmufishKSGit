@@ -54,3 +54,14 @@ MonoBehaviour:
     nGetChampion: 0300000001000000
   - vCountRange: {x: 50, y: 999}
     nGetChampion: 030000000200000001000000
+  getChampionRulesByProfit:
+  - vCountRange: {x: 0, y: 20}
+    nGetChampion: 01000000
+  - vCountRange: {x: 20, y: 30}
+    nGetChampion: 02000000
+  - vCountRange: {x: 30, y: 40}
+    nGetChampion: 0200000001000000
+  - vCountRange: {x: 40, y: 50}
+    nGetChampion: 0300000001000000
+  - vCountRange: {x: 50, y: 999}
+    nGetChampion: 030000000200000001000000

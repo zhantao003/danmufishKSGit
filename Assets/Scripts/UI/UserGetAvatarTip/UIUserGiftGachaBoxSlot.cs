@@ -14,7 +14,7 @@ public class UIUserGiftGachaBoxSlot : MonoBehaviour
     public Image uiImgBG;
     public Sprite[] arrImgBG;
 
-    public void SetInfo(CPlayerBaseInfo player, CGiftGachaBoxInfo info)
+    public void SetInfo(CPlayerBaseInfo player, CGiftGachaBoxInfo info, EMDrawType drawType = EMDrawType.KongTou)
     {
         if (player == null ||
             info == null)
@@ -27,6 +27,26 @@ public class UIUserGiftGachaBoxSlot : MonoBehaviour
         uiLabelName.text = player.userName;
 
         uiImgBG.sprite = arrImgBG[0];
+
+        switch (drawType)
+        {
+            case EMDrawType.KongTou:
+                {
+                    uiLabelFunc.text = "互动撒金币获得";
+                }
+                break;
+            case EMDrawType.SuperKongTou:
+                {
+                    uiLabelFunc.text = "互动飞机获得";
+                }
+                break;
+            case EMDrawType.Boom:
+                {
+                    uiLabelFunc.text = "互动魔法枪获得";
+                }
+                break;
+        }
+
         if (info.emType == CGiftGachaBoxInfo.EMGiftType.FishCoin)
         {
             uiLabelAvatar.text = info.nItemID + "积分";

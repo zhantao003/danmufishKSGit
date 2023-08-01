@@ -59,26 +59,33 @@ public class UIBattleRankRoot : MonoBehaviour
         }
     }
 
-    public void ShowRankInfo(CGetChampionRule curChampionRule)
+    public void ShowRankInfo(CGetChampionRule curChampionRuleByOuHuang, CGetChampionRule curChampionRuleByProfit)
     {
         bRankSuc = false;
         bProfitSuc = false;
-
-        pOuHuangSlot.InitInfo(1);
-        if(curChampionRule == null)
+        if(curChampionRuleByOuHuang == null)
+        {
+            pOuHuangSlot.InitInfo(1);
+        }
+        else
+        {
+            pOuHuangSlot.InitInfo(curChampionRuleByOuHuang.nGetChampion[0]);
+        }
+        
+        if(curChampionRuleByProfit == null)
         {
             pProfitSlot.InitInfo(1);
         }
         else
         {
-            pProfitSlot.InitInfo(curChampionRule.nGetChampion[0]);
+            pProfitSlot.InitInfo(curChampionRuleByProfit.nGetChampion[0]);
         }
         
 
         //pOuHuangSlot.InitInfo(1);
         //pProfitSlot.InitInfo(1);
 
-        localRankRoot.InitInfo(curChampionRule);
+        localRankRoot.InitInfo(curChampionRuleByOuHuang, curChampionRuleByProfit);
         //pLocalProfitRoot.InitInfo();
         //worldRankRoot.InitInfo();
         //worldProfitRoot.InitInfo();

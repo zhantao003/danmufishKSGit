@@ -209,7 +209,7 @@ public class UIUserGetAvatar : UIBase
         }
     }
 
-    public void AddGiftGachaBoxSlot(CPlayerBaseInfo player, CGiftGachaBoxInfo info)
+    public void AddGiftGachaBoxSlot(CPlayerBaseInfo player, CGiftGachaBoxInfo info, EMDrawType drawType = EMDrawType.KongTou)
     {
         GameObject objNewSlot = GameObject.Instantiate(objGiftGachaSlotRoot) as GameObject;
         objNewSlot.SetActive(true);
@@ -222,7 +222,7 @@ public class UIUserGetAvatar : UIBase
         UIUserGiftGachaBoxSlot pNewSlot = objNewSlot.GetComponent<UIUserGiftGachaBoxSlot>();
         if (pNewSlot != null)
         {
-            pNewSlot.SetInfo(player, info);
+            pNewSlot.SetInfo(player, info, drawType);
         }
     }
 
