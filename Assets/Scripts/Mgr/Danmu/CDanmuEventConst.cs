@@ -91,7 +91,7 @@ public class CDanmuGiftConst
     //public const string CardNest = "打窝";
     public const string CardBoom = "互动魔法枪";  //炸弹
     public const string CardTreasureBoom = "宝藏炸弹";
-    public const string GiftGachaBox = "互动撒金币";  //魔法棒
+    public const string GiftGachaBox = "互动撒金币";  //炫彩音符
     public const string CrazyGachaBox = "互动飞机";  //狂暴时间
 
     //官方直播间特殊礼物

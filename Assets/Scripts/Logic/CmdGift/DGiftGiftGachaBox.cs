@@ -73,22 +73,22 @@ public class DGiftGiftGachaBox : CDanmuGiftAction
             CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.KongTou), pReqParams, 10, true);
         }
 
-        //神秘空投换渔具比例
-        //加渔具
-        long nlFishPackCount = num * CGameColorFishMgr.Ins.pStaticConfig.GetInt("神秘空投换渔具比例");
-        CPlayerNetHelper.AddFishItemPack(info.uid, nlFishPackCount, nlFishPackCount, nlFishPackCount, 0);
-        //加飞轮
-        long curTimeStamp = CGameColorFishMgr.Ins.GetNowServerTime();
-        long nlFeilunCount = num * CGameColorFishMgr.Ins.pStaticConfig.GetInt("神秘空投换飞轮比例");
-        CHttpParam pReqParams2 = new CHttpParam
-        (
-            new CHttpParamSlot("uid", info.uid.ToString()),
-            new CHttpParamSlot("itemType", "fishLun"),
-            new CHttpParamSlot("count", nlFeilunCount.ToString()),
-            new CHttpParamSlot("time", curTimeStamp.ToString()),
-            new CHttpParamSlot("nonce", CEncryptHelper.AesEncrypt(info.uid.ToString() + CDanmuSDKCenter.Ins.szRoomId.ToString() + curTimeStamp) + CHelpTools.GetRandomString(8, true, true, true, false, ""))
-        );
-        CHttpMgr.Instance.SendHttpMsg(CHttpConst.AddGiftCount, pReqParams2, CHttpMgr.Instance.nReconnectTimes, true);
+        ////神秘空投换渔具比例
+        ////加渔具
+        //long nlFishPackCount = num * CGameColorFishMgr.Ins.pStaticConfig.GetInt("神秘空投换渔具比例");
+        //CPlayerNetHelper.AddFishItemPack(info.uid, nlFishPackCount, nlFishPackCount, nlFishPackCount, 0);
+        ////加飞轮
+        //long curTimeStamp = CGameColorFishMgr.Ins.GetNowServerTime();
+        //long nlFeilunCount = num * CGameColorFishMgr.Ins.pStaticConfig.GetInt("神秘空投换飞轮比例");
+        //CHttpParam pReqParams2 = new CHttpParam
+        //(
+        //    new CHttpParamSlot("uid", info.uid.ToString()),
+        //    new CHttpParamSlot("itemType", "fishLun"),
+        //    new CHttpParamSlot("count", nlFeilunCount.ToString()),
+        //    new CHttpParamSlot("time", curTimeStamp.ToString()),
+        //    new CHttpParamSlot("nonce", CEncryptHelper.AesEncrypt(info.uid.ToString() + CDanmuSDKCenter.Ins.szRoomId.ToString() + curTimeStamp) + CHelpTools.GetRandomString(8, true, true, true, false, ""))
+        //);
+        //CHttpMgr.Instance.SendHttpMsg(CHttpConst.AddGiftCount, pReqParams2, CHttpMgr.Instance.nReconnectTimes, true);
 
 
         //int nSpecFishGanID = 502;
