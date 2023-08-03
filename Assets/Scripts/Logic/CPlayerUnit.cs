@@ -1843,7 +1843,7 @@ public class CPlayerUnit : MonoBehaviour
                 CGameColorFishMgr.Ins.emCurGameType == CGameColorFishMgr.EMGameType.TimeBattle)
         {
             int nAddChampionCount = 0;
-            if ((int)info.emRare >= (int)EMRare.Shisi &&
+            if ((int)info.emRare >= (int)EMRare.Special &&
                 bShowRank)
             {
                 if (info.bBianYi)

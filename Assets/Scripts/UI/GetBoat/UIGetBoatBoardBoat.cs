@@ -18,7 +18,7 @@ public class UIGetBoatBoardBoat : MonoBehaviour
 
     public void OnOpen()
     {
-        OnClickTag(4);
+        OnClickTag(3);
     }
 
     public void Sort()
