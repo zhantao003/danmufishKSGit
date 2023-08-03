@@ -27,7 +27,6 @@ public class HHandlerAddFishCoin : INetEventHandler
 
         //Debug.Log(uid + "=====Game Coin =====" + gameCoin);
 
-
         if(!isRoomOk)
         {
             CPlayerLogicHelper.CheckExit(uid);
