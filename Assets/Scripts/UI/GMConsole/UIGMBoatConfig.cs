@@ -37,6 +37,7 @@ public class UIGMBoatConfig : MonoBehaviour
     void Start()
     {
         objSlotRoot.SetActive(false);
+        uiInputZhekou.text = "1";
     }
 
     public void Init(List<CGMFishBoatInfo> listInfos, float zhekou)
@@ -232,7 +233,6 @@ public class UIGMBoatConfig : MonoBehaviour
 
             listInfos.Add(pBoatInfo);
         }
-
         Init(listInfos, float.Parse(uiInputZhekou.text));
     }
 
