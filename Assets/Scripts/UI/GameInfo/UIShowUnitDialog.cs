@@ -334,7 +334,7 @@ public class UIShowUnitDialog : MonoBehaviour
                 {
                     szColorTip = "919191";
                 }
-                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" +  pTBLAvatarInfo.nID + avatars[i].GetExTime();
+                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" +  pTBLAvatarInfo.nID;// + avatars[i].GetExTime();
                 if (nRCount % 2 == 0)
                 {
                     szContent += "\r\n";
@@ -362,7 +362,7 @@ public class UIShowUnitDialog : MonoBehaviour
                 {
                     szColorTip = "919191";
                 }
-                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID + avatars[i].GetExTime();
+                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID;// + avatars[i].GetExTime();
                 if (nSRCount % 2 == 0)
                 {
                     szContent += "\r\n";
@@ -384,7 +384,7 @@ public class UIShowUnitDialog : MonoBehaviour
                 {
                     szColorTip = "919191";
                 }
-                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" +  pTBLAvatarInfo.nID + avatars[i].GetExTime();
+                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" +  pTBLAvatarInfo.nID;// + avatars[i].GetExTime();
                 if (nSSRCount % 2 == 0)
                 {
                     szContent += "\r\n";
@@ -406,7 +406,7 @@ public class UIShowUnitDialog : MonoBehaviour
                 {
                     szColorTip = "919191";
                 }
-                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID + avatars[i].GetExTime();
+                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID;// + avatars[i].GetExTime();
                 if (nURCount % 2 == 0)
                 {
                     szContent += "\r\n";
@@ -695,7 +695,7 @@ public class UIShowUnitDialog : MonoBehaviour
                 {
                     szColorTip = "919191";
                 }
-                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID + listShowBoats[0].GetExTime();
+                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID;// + listShowBoats[0].GetExTime();
                 //szContent += pTBLAvatarInfo.szName + "#" + $"<color=#{szColorTip}>" + pTBLAvatarInfo.nID + "</color>";
                 if (nRCount % 2 == 0)
                 {
@@ -724,7 +724,7 @@ public class UIShowUnitDialog : MonoBehaviour
                 {
                     szColorTip = "919191";
                 }
-                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID + listShowBoats[0].GetExTime();
+                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID;// + listShowBoats[0].GetExTime();
                 //szContent += pTBLAvatarInfo.szName + "#" + $"<color=#{szColorTip}>" + pTBLAvatarInfo.nID + "</color>";
                 if (nSRCount % 2 == 0)
                 {
@@ -747,7 +747,7 @@ public class UIShowUnitDialog : MonoBehaviour
                 {
                     szColorTip = "919191";
                 }
-                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID + listShowBoats[0].GetExTime();
+                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID;// + listShowBoats[0].GetExTime();
 
                 //if (nSSRCount == 0)
                 //    szContent += $"<color=#FF9500>°ÔSSRº∂¥¨°Ô</color>\r\n";
@@ -776,7 +776,7 @@ public class UIShowUnitDialog : MonoBehaviour
                 {
                     szColorTip = "919191";
                 }
-                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID + listShowBoats[0].GetExTime();
+                szContent += $"<color=#{szColorTip}>" + pTBLAvatarInfo.szName + "</color>#" + pTBLAvatarInfo.nID;// + listShowBoats[0].GetExTime();
 
                 //if (nSSRCount == 0)
                 //    szContent += $"<color=#FF9500>°ÔSSRº∂¥¨°Ô</color>\r\n";
