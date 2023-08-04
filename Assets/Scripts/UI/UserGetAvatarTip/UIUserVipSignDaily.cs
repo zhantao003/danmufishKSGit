@@ -32,11 +32,11 @@ public class UIUserVipSignDaily : MonoBehaviour
         {
             if (getFunc == UIUserGetAvatar.EMGetFunc.Sign)
             {
-                uiLabelGet.text = "Ç©µ½»ñµÃ ¼ÓÓÍÑ¼" + itemPack + "Ì×";
+                uiLabelGet.text = "Ç©µ½»ñµÃ »¥¶¯ÊÖ±ú" + itemPack + "Ì×";
             }
             else if (getFunc == UIUserGetAvatar.EMGetFunc.Auction)
             {
-                uiLabelGet.text = "¾ºÅÄ»ñµÃ ¼ÓÓÍÑ¼" + itemPack + "Ì×";
+                uiLabelGet.text = "¾ºÅÄ»ñµÃ »¥¶¯ÊÖ±ú" + itemPack + "Ì×";
             }
         }
         else

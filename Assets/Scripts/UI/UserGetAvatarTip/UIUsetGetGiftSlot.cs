@@ -47,7 +47,7 @@ public class UIUsetGetGiftSlot : MonoBehaviour
         }
         else if(func == UIUserGetAvatar.EMGetGiftType.FishItem)
         {
-            uiLabelFunc.text = "获得加油鸭";
+            uiLabelFunc.text = "获得互动手柄";
             uiLabelGiftName.text = nValue.ToString() + "套";
         }
         else if(func == UIUserGetAvatar.EMGetGiftType.FishLun)

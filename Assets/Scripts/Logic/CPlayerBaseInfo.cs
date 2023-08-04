@@ -357,10 +357,6 @@ public class CPlayerBaseInfo
         {
             return EMVipLv.Jianzhang;
         }
-        else
-        {
-            return EMVipLv.Green;
-        }
         //if (WinnerPoint >= 200)
         //{
         //    return EMVipLv.Zongdu;

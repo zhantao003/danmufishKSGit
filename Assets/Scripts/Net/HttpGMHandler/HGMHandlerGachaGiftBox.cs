@@ -36,7 +36,7 @@ public class HGMHandlerGachaGiftBox : INetEventHandler
             }
             else if (pGachaSlotInfo.emType == CGiftGachaBoxInfo.EMGiftType.Yuju)
             {
-                szLogRes += "¼ÓÓÍÑ¼:" + pGachaSlotInfo.nItemID + "Ì×\r\n";
+                szLogRes += "»¥¶¯ÊÖ±ú:" + pGachaSlotInfo.nItemID + "Ì×\r\n";
             }
             else if (pGachaSlotInfo.emType == CGiftGachaBoxInfo.EMGiftType.Feilun)
             {

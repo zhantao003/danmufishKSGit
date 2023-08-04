@@ -225,7 +225,7 @@ public class UIAuctionResult : UIBase
                     else if (resultInfo.dropInfo.nType == 2)
                     {
                         szIcon = "Icon/Gift/FishPack";
-                        szDropName = "¼ÓÓÍÑ¼:" + resultInfo.dropInfo.nValue + "Ì×";
+                        szDropName = "»¥¶¯ÊÖ±ú:" + resultInfo.dropInfo.nValue + "Ì×";
 
                     }
                     //·ÉÂÖ

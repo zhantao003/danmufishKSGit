@@ -48,7 +48,7 @@ public class UISpecialGiftShow : MonoBehaviour
                 break;
             case EMGiftMenuType.FishPack:
                 {
-                    szRewardType = "º””Õ—º";
+                    szRewardType = "ª•∂Ø ÷±˙";
                 }
                 break;
             case EMGiftMenuType.HaiDaoCoin:

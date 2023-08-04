@@ -36,7 +36,7 @@ public class UIUsetSpecialGiftSlot : MonoBehaviour
         //}
         //else if (info.emType == CSpecialGiftInfo.EMGiftType.Item2)
         //{
-        //    uiLabelAvatar.text = info.count + "Ì×¼ÓÓÍÑ¼";
+        //    uiLabelAvatar.text = info.count + "Ì×»¥¶¯ÊÖ±ú";
         //}
         //else if (info.emType == CSpecialGiftInfo.EMGiftType.Item3)
         //{
