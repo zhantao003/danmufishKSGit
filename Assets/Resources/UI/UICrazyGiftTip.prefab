@@ -72,7 +72,7 @@ MonoBehaviour:
   uiLabelName: {fileID: 4189621483657772420}
   uiLabelFunc: {fileID: 8735519653083037721}
   uiLabelAvatar: {fileID: 8735519653148239282}
-  nTimeLerp: 1200
+  nTimeLerp: 2400
 --- !u!114 &1567783703302659894
 MonoBehaviour:
   m_ObjectHideFlags: 0

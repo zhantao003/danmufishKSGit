@@ -33,23 +33,12 @@ public class DGiftCrazyGachaBox : CDanmuGiftAction
 
     public void ShowCast(long num, CPlayerBaseInfo info)
     {
-        int nChouJiangNum = 0;
-        for (int i = 0; i < num; i++)
-        {
-            if (Random.Range(1, 101) <= CGameColorFishMgr.Ins.pStaticConfig.GetInt("³é½±¸ÅÂÊ2"))
-            {
-                nChouJiangNum++;
-            }
-        }
-        if (nChouJiangNum > 0)
-        {
-            CHttpParam pReqParams2 = new CHttpParam(
-               new CHttpParamSlot("uid", info.uid.ToString()),
-               new CHttpParamSlot("modelId", "3"),
-               new CHttpParamSlot("gachaCount", (nChouJiangNum * 10).ToString())
-            );
-            CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.SuperKongTou), pReqParams2, 10, true);
-        }
+        CHttpParam pReqParams2 = new CHttpParam(
+              new CHttpParamSlot("uid", info.uid.ToString()),
+              new CHttpParamSlot("modelId", "3"),
+              new CHttpParamSlot("gachaCount", (num * 10).ToString())
+           );
+        CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.SuperKongTou), pReqParams2, 10, true);
 
         CSpecialGift specialGift = new CSpecialGift();
         CSpecialGiftInfo specialGiftInfo = new CSpecialGiftInfo();

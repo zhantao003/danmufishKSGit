@@ -55,23 +55,12 @@ public class DGiftGiftGachaBox : CDanmuGiftAction
             if (pUnit == null) return;
         }
 
-        int nChouJiangNum = 0;
-        for (int i = 0; i < num; i++)
-        {
-            if (Random.Range(1, 101) <= CGameColorFishMgr.Ins.pStaticConfig.GetInt("抽奖概率2"))
-            {
-                nChouJiangNum++;
-            }
-        }
-        if (nChouJiangNum > 0)
-        {
-            CHttpParam pReqParams = new CHttpParam(
-               new CHttpParamSlot("uid", info.uid.ToString()),
-               new CHttpParamSlot("modelId", "3"),
-               new CHttpParamSlot("gachaCount", nChouJiangNum.ToString())
-            );
-            CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.KongTou), pReqParams, 10, true);
-        }
+        CHttpParam pReqParams = new CHttpParam(
+              new CHttpParamSlot("uid", info.uid.ToString()),
+              new CHttpParamSlot("modelId", "3"),
+              new CHttpParamSlot("gachaCount", num.ToString())
+           );
+        CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.KongTou), pReqParams, 10, true);
 
         ////神秘空投换渔具比例
         ////加渔具
