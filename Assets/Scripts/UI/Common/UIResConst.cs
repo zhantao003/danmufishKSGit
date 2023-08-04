@@ -54,6 +54,7 @@ public enum UIResType
     CrazyGiftTip = 1046,        //特殊送礼面板
     AvatarInfo = 1047,          //装扮信息
     VersionMsgBox = 1048,       //版本提示
+    CodeBoard = 1049,           //Code面板
 
     RoomVSInfo = 1100,        //炸鱼模式房间信息
     GameVSResult = 1101,      //炸鱼模式游戏结算

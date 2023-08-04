@@ -22,13 +22,13 @@ public class DCmdChaxunFesInfo : CDanmuCmdAction
         if (uiUnitInfo == null) return;
 
         CFishFesPlayerInfo pPlayerFesInfo = CFishFesInfoMgr.Ins.GetPlayerInfo((int)CFishFesInfoMgr.EMFesType.RankOuhuang, uid);
-        CFishFesPlayerInfo pPlayerFes2Info = CFishFesInfoMgr.Ins.GetPlayerInfo((int)CFishFesInfoMgr.EMFesType.RankRicher, uid);
+        //CFishFesPlayerInfo pPlayerFes2Info = CFishFesInfoMgr.Ins.GetPlayerInfo((int)CFishFesInfoMgr.EMFesType.RankRicher, uid);
         string szContent = "";
         if (CFishFesInfoMgr.Ins.IsFesOn((int)CFishFesInfoMgr.EMFesType.RankOuhuang))
         {
             if (pPlayerFesInfo == null)
             {
-                szContent += "皇冠：暂无\r\n";
+                szContent += "皇冠：暂无";//\r\n";
             }
             else
             {
@@ -36,43 +36,43 @@ public class DCmdChaxunFesInfo : CDanmuCmdAction
 
                 if (pNextGiftInfo != null)
                 {
-                    szContent += $"皇冠：<color=#FF9500>{pPlayerFesInfo.nPlayerPoint}</color>,离下一级差{pNextGiftInfo.nPointPlayer - pPlayerFesInfo.nPlayerPoint}个\r\n";
+                    szContent += $"皇冠：<color=#FF9500>{pPlayerFesInfo.nPlayerPoint}</color>,离下一级差{pNextGiftInfo.nPointPlayer - pPlayerFesInfo.nPlayerPoint}个";//\r\n";
                 }
                 else
                 {
-                    szContent += $"皇冠：奖励已领完\r\n";
+                    szContent += $"皇冠：奖励已领完";//\r\n";
                 }
             }
         }
         else
         {
-            szContent += "赛季未开启\r\n";
+            szContent += "赛季未开启";//\r\n";
         }
 
-        if (CFishFesInfoMgr.Ins.IsFesOn((int)CFishFesInfoMgr.EMFesType.RankRicher))
-        {
-            if (pPlayerFes2Info == null)
-            {
-                szContent += "收益积分：暂无";
-            }
-            else
-            {
-                CFishFesInfoSlot pNextGiftInfo = CFishFesInfoMgr.Ins.GetFesInfo(2, pPlayerFes2Info.nCurIdx);
+        //if (CFishFesInfoMgr.Ins.IsFesOn((int)CFishFesInfoMgr.EMFesType.RankRicher))
+        //{
+        //    if (pPlayerFes2Info == null)
+        //    {
+        //        szContent += "收益积分：暂无";
+        //    }
+        //    else
+        //    {
+        //        CFishFesInfoSlot pNextGiftInfo = CFishFesInfoMgr.Ins.GetFesInfo(2, pPlayerFes2Info.nCurIdx);
 
-                if (pNextGiftInfo != null)
-                {
-                    szContent += $"收益积分：<color=#FF9500>{CHelpTools.GetGoldSZ(pPlayerFes2Info.nPlayerPoint,"f1")}</color>,离下一级差{CHelpTools.GetGoldSZ(pNextGiftInfo.nPointPlayer - pPlayerFes2Info.nPlayerPoint,"f1")}\r\n";
-                }
-                else
-                {
-                    szContent += $"收益积分：奖励已领完\r\n";
-                }
-            }
-        }
-        else
-        {
-            szContent += "赛季未开启";
-        }
+        //        if (pNextGiftInfo != null)
+        //        {
+        //            szContent += $"收益积分：<color=#FF9500>{CHelpTools.GetGoldSZ(pPlayerFes2Info.nPlayerPoint,"f1")}</color>,离下一级差{CHelpTools.GetGoldSZ(pNextGiftInfo.nPointPlayer - pPlayerFes2Info.nPlayerPoint,"f1")}\r\n";
+        //        }
+        //        else
+        //        {
+        //            szContent += $"收益积分：奖励已领完\r\n";
+        //        }
+        //    }
+        //}
+        //else
+        //{
+        //    szContent += "赛季未开启";
+        //}
 
         uiUnitInfo.SetDmContent(szContent);
     }

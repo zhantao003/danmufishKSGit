@@ -122,13 +122,13 @@ public class UIAvatarInfo : UIBase
 
         if(emCurType == EMType.OuHuang)
         {
-            uiLabelTip.text = "赛季7天清空";
+            uiLabelTip.text = "※皇冠达到指定数量自动获得奖励，每赛季重置※";
 
             RefreshInfoOuHuang(CFishFesInfoMgr.Ins.GetFesPack((long)CFishFesInfoMgr.EMFesType.RankOuhuang));
         }
         else if(emCurType == EMType.Richer)
         {
-            uiLabelTip.text = "赛季7天清空\r\n(摸鱼、拍卖收益算入，决斗收益不算)";
+            uiLabelTip.text = "※皇冠达到指定数量自动获得奖励，每赛季重置※";
 
             RefreshInfoRicher(CFishFesInfoMgr.Ins.GetFesPack((long)CFishFesInfoMgr.EMFesType.RankRicher));
         }
