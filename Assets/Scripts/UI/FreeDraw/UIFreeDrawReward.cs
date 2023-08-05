@@ -18,7 +18,7 @@ public class UIFreeDrawReward : MonoBehaviour
         {
             case CGiftGachaBoxInfo.EMGiftType.Yuju:
                 {
-                    szName = "º””Õ—º*" + rewardInfo.nlRewardCount;
+                    szName = "ª•∂Ø ÷±˙*" + rewardInfo.nlRewardCount;
                     szIcon = "Icon/Gift/FishPack";
                 }
                 break;

@@ -40,6 +40,7 @@ public class HHandlerGetUserFishInfo : INetEventHandler
         long winnerOuhuang = pMsg.GetLong("winnerOuhuang");
         long winnerRicher = pMsg.GetLong("winnerRicher");
         long fishWinnerPoint = pMsg.GetLong("fishWinnerPoint");
+        int nUserRank = pMsg.GetInt("userRank");
 
         //基础信息同步
         CPlayerBaseInfo pPlayer = CPlayerMgr.Ins.GetPlayer(uid);
@@ -59,6 +60,7 @@ public class HHandlerGetUserFishInfo : INetEventHandler
         pPlayer.nWinnerOuhuang = winnerOuhuang;
         pPlayer.nWinnerRicher = winnerRicher;
         pPlayer.nFishWinnerPoint = fishWinnerPoint;
+        pPlayer.nCurRank = nUserRank;
 
         //Debug.Log(pPlayer.userName + "--当前验证码积分:" + creditPoint);
         //加一个容错

@@ -62,7 +62,7 @@ public class UIGMGiftGachaBoxConfigSlot : MonoBehaviour
             objShopAvatar.SetActive(false);
             objError.SetActive(false);
 
-            uiLabelName.text = $"{itemId}Ì×¼ÓÓÍÑ¼";
+            uiLabelName.text = $"{itemId}Ì×»¥¶¯ÊÖ±ú";
         }
         else if (itemType == 2)    //·ÉÂÖ
         {

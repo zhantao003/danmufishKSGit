@@ -208,6 +208,8 @@ public class CPlayerBaseInfo
     //是否机器人
     public bool bIsRobot = false;
 
+    public int nCurRank;        //当前排名
+
     public CPlayerBaseInfo(string _uid, string _userName, string _userFace, long _fansMedalLevel, string _fansMedalName ,bool _fansMedalWearingStatus, long _guardLevel, string _roomId, EMUserType userType)
     {
         Init(_uid, _userName, _userFace, _fansMedalLevel, _fansMedalName, _fansMedalWearingStatus, _guardLevel, _roomId, userType);
@@ -339,26 +341,42 @@ public class CPlayerBaseInfo
 
     public EMVipLv GetVipLv()
     {
-        if (WinnerPoint >= 200)
+        if (nCurRank == 1)
         {
             return EMVipLv.Zongdu;
         }
-        else if (WinnerPoint >= 100)  
+        else if (nCurRank <= 5)
         {
             return EMVipLv.Pro;
         }
-        else if (WinnerPoint >= 55)  
+        else if (nCurRank <= 20)
         {
             return EMVipLv.Tidu;
         }
-        else if (WinnerPoint >= 25) 
+        else if (nCurRank <= 50)
         {
             return EMVipLv.Jianzhang;
         }
-        else if (WinnerPoint >= 5) 
-        {
-            return EMVipLv.Green;
-        }
+        //if (WinnerPoint >= 200)
+        //{
+        //    return EMVipLv.Zongdu;
+        //}
+        //else if (WinnerPoint >= 100)  
+        //{
+        //    return EMVipLv.Pro;
+        //}
+        //else if (WinnerPoint >= 55)  
+        //{
+        //    return EMVipLv.Tidu;
+        //}
+        //else if (WinnerPoint >= 25) 
+        //{
+        //    return EMVipLv.Jianzhang;
+        //}
+        //else if (WinnerPoint >= 5) 
+        //{
+        //    return EMVipLv.Green;
+        //}
 
         return (EMVipLv)nVipPlayer;
     }

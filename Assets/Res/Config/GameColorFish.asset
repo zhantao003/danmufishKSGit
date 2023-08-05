@@ -151,7 +151,7 @@ MonoBehaviour:
       Data: "\u91D1\u70B8\u5F39\u6700\u5C0F\u9C7C\u6570"
     - Name: $v
       Entry: 3
-      Data: 6
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
@@ -163,7 +163,7 @@ MonoBehaviour:
       Data: "\u91D1\u70B8\u5F39\u6700\u5927\u9C7C\u6570"
     - Name: $v
       Entry: 3
-      Data: 6
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
@@ -1039,7 +1039,7 @@ MonoBehaviour:
       Data: "\u8E66\u8E66\u70B8\u5F39\u589E\u52A0\u6BD4\u4F8B"
     - Name: $v
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: 
       Entry: 8
       Data: 

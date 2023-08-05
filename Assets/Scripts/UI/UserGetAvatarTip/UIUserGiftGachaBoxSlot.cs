@@ -32,7 +32,7 @@ public class UIUserGiftGachaBoxSlot : MonoBehaviour
         {
             case EMDrawType.KongTou:
                 {
-                    uiLabelFunc.text = "互动撒金币获得";
+                    uiLabelFunc.text = "互动魔法枪获得";
                 }
                 break;
             case EMDrawType.SuperKongTou:
@@ -42,7 +42,7 @@ public class UIUserGiftGachaBoxSlot : MonoBehaviour
                 break;
             case EMDrawType.Boom:
                 {
-                    uiLabelFunc.text = "互动魔法枪获得";
+                    uiLabelFunc.text = "互动撒金币获得";
                 }
                 break;
         }
@@ -53,7 +53,7 @@ public class UIUserGiftGachaBoxSlot : MonoBehaviour
         }
         else if(info.emType == CGiftGachaBoxInfo.EMGiftType.Yuju)
         {
-            uiLabelAvatar.text = info.nItemID + "套加油鸭";
+            uiLabelAvatar.text = info.nItemID + "套互动手柄";
         }
         else if(info.emType == CGiftGachaBoxInfo.EMGiftType.Feilun)
         {

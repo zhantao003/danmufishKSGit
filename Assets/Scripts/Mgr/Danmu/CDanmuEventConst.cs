@@ -87,11 +87,11 @@ public class CDanmuGiftConst
     //public const string CardYuGan = "鱼竿";
     //public const string CardFuPiao = "浮漂";
     public const string CardFeiLun = "初级卷轴";    //飞轮
-    public const string CardFishPack = "加油鸭";  //渔具
+    public const string CardFishPack = "互动手柄";  //渔具
     //public const string CardNest = "打窝";
-    public const string CardBoom = "互动魔法枪";  //炸弹
+    public const string CardBoom = "互动撒金币";  //炸弹
     public const string CardTreasureBoom = "宝藏炸弹";
-    public const string GiftGachaBox = "互动撒金币";  //炫彩音符
+    public const string GiftGachaBox = "互动魔法枪";  //炫彩音符
     public const string CrazyGachaBox = "互动飞机";  //狂暴时间
 
     //官方直播间特殊礼物

@@ -38,7 +38,7 @@ public class UIGiftInfo : MonoBehaviour
                 break;
             case EMGiftMenuType.FishPack:
                 {
-                    szName = "º””Õ—º";
+                    szName = "ª•∂Ø ÷±˙";
                     szIcon = "Icon/Gift/FishPack";
                 }
                 break;

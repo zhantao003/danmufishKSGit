@@ -33,24 +33,6 @@ public class DGiftCrazyGachaBox : CDanmuGiftAction
 
     public void ShowCast(long num, CPlayerBaseInfo info)
     {
-        int nChouJiangNum = 0;
-        for (int i = 0; i < num; i++)
-        {
-            if (Random.Range(1, 101) <= CGameColorFishMgr.Ins.pStaticConfig.GetInt("抽奖概率2"))
-            {
-                nChouJiangNum++;
-            }
-        }
-        if (nChouJiangNum > 0)
-        {
-            CHttpParam pReqParams2 = new CHttpParam(
-               new CHttpParamSlot("uid", info.uid.ToString()),
-               new CHttpParamSlot("modelId", "3"),
-               new CHttpParamSlot("gachaCount", (nChouJiangNum * 10).ToString())
-            );
-            CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.SuperKongTou), pReqParams2, 10, true);
-        }
-
         CSpecialGift specialGift = new CSpecialGift();
         CSpecialGiftInfo specialGiftInfo = new CSpecialGiftInfo();
         specialGiftInfo.count = num;
@@ -58,6 +40,25 @@ public class DGiftCrazyGachaBox : CDanmuGiftAction
         specialGift.baseInfo = info;
         specialGift.giftInfo = specialGiftInfo;
         UICrazyGiftTip.ShowInfo(specialGift);
+
+        //加入玩家单位
+        CPlayerUnit pUnit = CPlayerMgr.Ins.GetIdleUnit(info.uid);
+        if (pUnit == null)
+        {
+            CGameColorFishMgr.Ins.JoinPlayer(info, CGameColorFishMgr.EMJoinType.Gift);
+
+            pUnit = CPlayerMgr.Ins.GetIdleUnit(info.uid);
+            if (pUnit == null) return;
+        }
+
+        CHttpParam pReqParams2 = new CHttpParam(
+              new CHttpParamSlot("uid", info.uid.ToString()),
+              new CHttpParamSlot("modelId", "3"),
+              new CHttpParamSlot("gachaCount", (num * 30).ToString())
+           );
+        CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.SuperKongTou), pReqParams2, 10, true);
+
+      
 
         //加飞轮
         long curTimeStamp = CGameColorFishMgr.Ins.GetNowServerTime();
