@@ -341,21 +341,24 @@ public class CPlayerBaseInfo
 
     public EMVipLv GetVipLv()
     {
-        if (nCurRank == 1)
+        if (nCurRank > 0)
         {
-            return EMVipLv.Zongdu;
-        }
-        else if (nCurRank <= 5)
-        {
-            return EMVipLv.Pro;
-        }
-        else if (nCurRank <= 20)
-        {
-            return EMVipLv.Tidu;
-        }
-        else if (nCurRank <= 50)
-        {
-            return EMVipLv.Jianzhang;
+            if (nCurRank == 1)
+            {
+                return EMVipLv.Zongdu;
+            }
+            else if (nCurRank <= 5)
+            {
+                return EMVipLv.Pro;
+            }
+            else if (nCurRank <= 20)
+            {
+                return EMVipLv.Tidu;
+            }
+            else if (nCurRank <= 50)
+            {
+                return EMVipLv.Jianzhang;
+            }
         }
         //if (WinnerPoint >= 200)
         //{
