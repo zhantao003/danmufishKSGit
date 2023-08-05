@@ -613,21 +613,29 @@ public class CPlayerUnit : MonoBehaviour
         for (int i = 0;i < nCount;i++)
         {
             CFishInfo fishInfo = null;
+            if(bGoldBoom && i <= 1)
+            {
+                bGetChengSeFish = true;
+            }
+            else
+            {
+                bGetChengSeFish = false;
+            }
             if(bomberCountInfo != null && i == 0)
             {
                 ST_FishInfo info = CGameColorFishMgr.Ins.pMap.pTBLHandlerFishInfo.GetInfo(bomberCountInfo.nFishId);
                 fishInfo = new CFishInfo(info, bomberCountInfo.bBianyi, pInfo.GetProAddValue(EMAddUnitProType.FishSize));
                 RecordFishInfo(fishInfo);
             }
-            else if(i == nCount - 1 &&
-                    bGoldBoom &&
-                    CGameColorFishMgr.Ins.emCurGameType != CGameColorFishMgr.EMGameType.Boss)
-            {
-                ST_FishInfo info = CGameColorFishMgr.Ins.pMap.pTBLHandlerBoomFishInfo.GetInfo(1000003);
-                fishInfo = new CFishInfo(info, false, pInfo.GetProAddValue(EMAddUnitProType.FishSize));
-                RecordFishInfo(fishInfo);
+            //else if (i == nCount - 1 &&
+            //        bGoldBoom &&
+            //        CGameColorFishMgr.Ins.emCurGameType != CGameColorFishMgr.EMGameType.Boss)
+            //{
+            //    ST_FishInfo info = CGameColorFishMgr.Ins.pMap.pTBLHandlerBoomFishInfo.GetInfo(1000003);
+            //    fishInfo = new CFishInfo(info, false, pInfo.GetProAddValue(EMAddUnitProType.FishSize));
+            //    RecordFishInfo(fishInfo);
 
-            }
+            //}
             else
             {
                 if (nGetFishMatByGold > 0 && 
