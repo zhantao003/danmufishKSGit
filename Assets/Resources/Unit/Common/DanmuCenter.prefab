@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87273a5d08bdd7a4188d8ff51a6d1cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emPlatform: 4
+  emPlatform: 2
   arrPlatformMgr:
   - {fileID: 1548991151642537438}
   - {fileID: 1548991151588914584}
@@ -128,7 +128,7 @@ MonoBehaviour:
   szRoomId: 
   szNickName: 
   szHeadIcon: 
-  bDevType: 1
+  bDevType: 0
 --- !u!114 &1548991150763875147
 MonoBehaviour:
   m_ObjectHideFlags: 0
