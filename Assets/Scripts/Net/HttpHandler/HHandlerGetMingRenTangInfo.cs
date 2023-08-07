@@ -16,7 +16,6 @@ public class HHandlerGetMingRenTangInfo : INetEventHandler
         if (!szStatus.Equals("ok")) return;
 
         CLocalNetArrayMsg arrRankOuContent = pMsg.GetNetMsgArr("list");
-        Debug.LogError("Count ===" + arrRankOuContent.GetSize());
         List<CMingRenTangInfoArr> listMingRenTangInfos = new List<CMingRenTangInfoArr>();
         for (int i = 0; i < arrRankOuContent.GetSize(); i++)
         {
