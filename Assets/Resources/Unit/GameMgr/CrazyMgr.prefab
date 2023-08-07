@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fCrazyTimeGift: 100
-  fCrazyTimeGacha: 1200
+  fCrazyTimeGacha: 200
   fCheckBattery: 1000
   nlTotalBatteryCount: 0
   bCrazy: 0
-  fKongTouTimeGift: 1200
+  fKongTouTimeGift: 200
   bKongTou: 0
   pEffCrazyTicker:
     m_float: 10
