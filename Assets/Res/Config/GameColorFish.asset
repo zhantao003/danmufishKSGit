@@ -1111,7 +1111,7 @@ MonoBehaviour:
       Data: "\u70B8\u5F39\u589E\u52A0boss\u6389\u7387"
     - Name: $v
       Entry: 3
-      Data: 1000
+      Data: 200
     - Name: 
       Entry: 8
       Data: 
@@ -1135,7 +1135,7 @@ MonoBehaviour:
       Data: "\u70B8\u5F39\u5FC5\u51FA\u8D27\u4E2A\u6570"
     - Name: $v
       Entry: 3
-      Data: 12
+      Data: 30
     - Name: 
       Entry: 8
       Data: 
