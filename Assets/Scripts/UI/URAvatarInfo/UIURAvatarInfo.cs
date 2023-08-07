@@ -24,20 +24,17 @@ public class CMingRenTangInfo
 [System.Serializable]
 public class CMingRenTangInfoArr
 {
-    [Header("名人堂人物信息队列")]
-    public CMingRenTangInfo[] pMingRenInfos;
+    public int nSeason;
+    [Header("欧皇名人堂人物信息队列")]
+    public CMingRenTangInfo[] pMingRenInfosByOuHuang;
+    [Header("富豪名人堂人物信息队列")]
+    public CMingRenTangInfo[] pMingRenInfosByProfit;
     public string szTitle;
 }
 
 
 public class UIURAvatarInfo : UIBase
 {
-    [Header("欧皇名人")]
-    public List<CMingRenTangInfoArr> showOuHuangInfos = new List<CMingRenTangInfoArr>();
-    [Header("富豪名人")]
-    public List<CMingRenTangInfoArr> showProfitInfos = new List<CMingRenTangInfoArr>();
-
-
     List<CMingRenTangInfoArr> curShowInfos = new List<CMingRenTangInfoArr>();     
 
     public LoopGridView pLoopGrid;
@@ -47,6 +44,8 @@ public class UIURAvatarInfo : UIBase
     public int emCurTag;
 
     public bool bInit = false;
+
+    bool bWaitNet = true;
 
     public void Sort()
     {
@@ -69,12 +68,38 @@ public class UIURAvatarInfo : UIBase
 
     public override void OnOpen()
     {
-        OnClickTag(0);
+        bWaitNet = true;
+        if (curShowInfos == null ||
+            curShowInfos.Count <= 0)
+        {
+            CHttpParam pReqParams = new CHttpParam(
+               new CHttpParamSlot("page", "1")
+               );
+            CHttpMgr.Instance.SendHttpMsg(CHttpConst.GetMingrentangList, new HHandlerGetMingRenTangInfo(), pReqParams);
+        }
+        else
+        {
+            InitInfo();
+        }
+       
+       
         //Refresh();
+    }
+
+    public void InitInfo(List<CMingRenTangInfoArr> showInfo = null)
+    {
+        if(showInfo != null)
+        {
+            curShowInfos.AddRange(showInfo);
+        }
+        bWaitNet = false;
+        OnClickTag(0);
     }
 
     public void Refresh()
     {
+        if(bWaitNet)
+            return;
         //avatarInfos.Clear();
         //List<ST_MingrenTang> mingRenTangInfos = CTBLHandlerMingrenTang.Ins.GetInfos();
         //for (int i = 0; i < mingRenTangInfos.Count; i++)
@@ -86,15 +111,15 @@ public class UIURAvatarInfo : UIBase
 
         //    avatarInfos.Add(mingRenTangInfos[i]);
         //}
-        curShowInfos.Clear();
-        if (emCurTag == 0)
-        {
-            curShowInfos.AddRange(showOuHuangInfos);
-        }
-        else if(emCurTag == 1)
-        {
-            curShowInfos.AddRange(showProfitInfos);
-        }
+        //curShowInfos.Clear();
+        //if (emCurTag == 0)
+        //{
+        //    curShowInfos.AddRange(showOuHuangInfos);
+        //}
+        //else if(emCurTag == 1)
+        //{
+        //    curShowInfos.AddRange(showProfitInfos);
+        //}
         Sort();
         //获取信息
         if (!bInit)

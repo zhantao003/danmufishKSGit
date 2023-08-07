@@ -16,23 +16,42 @@ public class UIURMingRenSlotArr : MonoBehaviour
     {
         if (mingRenTangInfoArr == null)
             return;
+        bool bOuHuang = (nIdx == 0);
+        objOuHuang.SetActive(bOuHuang);
+        objProfit.SetActive(!bOuHuang);
 
-        objOuHuang.SetActive(nIdx == 0);
-        objProfit.SetActive(nIdx == 1);
-
-        uiTitle.text = mingRenTangInfoArr.szTitle;
-        for(int i = 0;i < mingRenTangInfoArr.pMingRenInfos.Length;i++)
+        
+        if (bOuHuang)
         {
-            if (i >= pSlots.Length)
-                break;
-            pSlots[i].SetActive(true);
-            pSlots[i].InitInfo(mingRenTangInfoArr.pMingRenInfos[i]);
+            uiTitle.text = $"第{mingRenTangInfoArr.nSeason}赛季欧皇";// mingRenTangInfoArr.szTitle;
+            for (int i = 0; i < mingRenTangInfoArr.pMingRenInfosByOuHuang.Length; i++)
+            {
+                if (i >= pSlots.Length)
+                    break;
+                pSlots[i].SetActive(true);
+                pSlots[i].InitInfo(mingRenTangInfoArr.pMingRenInfosByOuHuang[i]);
+            }
+            for (int i = mingRenTangInfoArr.pMingRenInfosByOuHuang.Length; i < pSlots.Length; i++)
+            {
+                pSlots[i].SetActive(false);
+
+            }
         }
-        for (int i = mingRenTangInfoArr.pMingRenInfos.Length; i < pSlots.Length; i++)
+        else
         {
-            pSlots[i].SetActive(false);
+            uiTitle.text = $"第{mingRenTangInfoArr.nSeason}赛季富豪";
+            for (int i = 0; i < mingRenTangInfoArr.pMingRenInfosByProfit.Length; i++)
+            {
+                if (i >= pSlots.Length)
+                    break;
+                pSlots[i].SetActive(true);
+                pSlots[i].InitInfo(mingRenTangInfoArr.pMingRenInfosByProfit[i]);
+            }
+            for (int i = mingRenTangInfoArr.pMingRenInfosByProfit.Length; i < pSlots.Length; i++)
+            {
+                pSlots[i].SetActive(false);
 
+            }
         }
-
     }
 }

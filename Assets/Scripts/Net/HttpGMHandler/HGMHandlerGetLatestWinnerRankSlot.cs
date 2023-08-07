@@ -11,6 +11,7 @@ public class HGMHandlerGetLatestWinnerRankSlot : INetEventHandler
 
     public void OnMsgHandler(CLocalNetMsg pMsg)
     {
+        long nlSeasonID = pMsg.GetLong("season");
         CLocalNetArrayMsg arrRankOuContent = pMsg.GetNetMsgArr("rankOu");
         List<CPlayerRankInfo> listRankOuInfo = new List<CPlayerRankInfo>();
         for (int i = 0; i < arrRankOuContent.GetSize(); i++)
@@ -85,6 +86,36 @@ public class HGMHandlerGetLatestWinnerRankSlot : INetEventHandler
                 uiGMMingrentang.uiInputRichHeadIcon3.text = listRankRicherInfo[2].headIcon;
             }
         }
+
+        CHttpParam pReqParams = new CHttpParam(
+            new CHttpParamSlot("seasonId", nlSeasonID.ToString()),
+
+            new CHttpParamSlot("ouuid1", listRankOuInfo[0].uid),
+            new CHttpParamSlot("ouname1", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankOuInfo[0].userName) ? "" : listRankOuInfo[0].userName)),
+            new CHttpParamSlot("ouheadIcon1", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankOuInfo[0].headIcon) ? "" : listRankOuInfo[0].headIcon)),
+
+            new CHttpParamSlot("ouuid2", listRankOuInfo[1].uid),
+            new CHttpParamSlot("ouname2", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankOuInfo[1].userName) ? "" : listRankOuInfo[1].userName)),
+            new CHttpParamSlot("ouheadIcon2", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankOuInfo[1].headIcon) ? "" : listRankOuInfo[1].headIcon)),
+
+            new CHttpParamSlot("ouuid3", listRankOuInfo[2].uid),
+            new CHttpParamSlot("ouname3", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankOuInfo[2].userName) ? "" : listRankOuInfo[2].userName)),
+            new CHttpParamSlot("ouheadIcon3", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankOuInfo[2].headIcon) ? "" : listRankOuInfo[2].headIcon)),
+
+            new CHttpParamSlot("richuid1", listRankRicherInfo[0].uid),
+            new CHttpParamSlot("richname1", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankRicherInfo[0].userName) ? "" : listRankRicherInfo[0].userName)),
+            new CHttpParamSlot("richheadIcon1", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankRicherInfo[0].headIcon) ? "" : listRankRicherInfo[0].headIcon)),
+
+            new CHttpParamSlot("richuid2", listRankRicherInfo[1].uid),
+            new CHttpParamSlot("richname2", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankRicherInfo[1].userName) ? "" : listRankRicherInfo[1].userName)),
+            new CHttpParamSlot("richheadIcon2", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankRicherInfo[1].headIcon) ? "" : listRankRicherInfo[1].headIcon)),
+
+            new CHttpParamSlot("richuid3", listRankRicherInfo[2].uid),
+            new CHttpParamSlot("richname3", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankRicherInfo[2].userName) ? "" : listRankRicherInfo[2].userName)),
+            new CHttpParamSlot("richheadIcon3", System.Net.WebUtility.UrlEncode(CHelpTools.IsStringEmptyOrNone(listRankRicherInfo[2].headIcon) ? "" : listRankRicherInfo[2].headIcon))
+        );
+
+        CHttpMgr.Instance.SendHttpMsg(CHttpConst_Debug.DEBUG_SetMingrentangInfo,pReqParams);
 
         //导出文件
         LocalFileManage.ExportFile(szContent, "排行榜数据");

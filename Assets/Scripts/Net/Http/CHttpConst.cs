@@ -70,7 +70,7 @@ public class CHttpConst {
     public const string GetRankListFishWinnerRicher = "api/get_fishWinnerRicherRL";        //获取富豪排行榜
     public const string GetRLFishWinnerOuhuangBySlot = "api/get_fishWinnerOuhuangRLbySlots";      //获取指定用户的欧皇排行榜
     public const string GetRLFishWinnerRicherBySlot = "api/get_fishWinnerRicherRLbySlots";        //获取指定用户的富豪排行榜
-    public const string GetMingrentangList = "api/fisher_getMingrentang";        //获取名人堂信息
+    public const string GetMingrentangList = "api/fisher_getMingrentangInfo";        //获取名人堂信息
 
     public const string DebugViewerAddCoin = "api/viewer_debugaddcoin";                                 //调试指令:给玩家加钱
     public const string DebugAddFishCoin = "api/debug_addfishcoin";                                     //调试指令:给玩家加积分
