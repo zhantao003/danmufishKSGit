@@ -51,12 +51,12 @@ public class DGiftCrazyGachaBox : CDanmuGiftAction
             if (pUnit == null) return;
         }
 
-        CHttpParam pReqParams2 = new CHttpParam(
-              new CHttpParamSlot("uid", info.uid.ToString()),
-              new CHttpParamSlot("modelId", "3"),
-              new CHttpParamSlot("gachaCount", (num * 30).ToString())
-           );
-        CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.SuperKongTou), pReqParams2, 10, true);
+        //CHttpParam pReqParams2 = new CHttpParam(
+        //      new CHttpParamSlot("uid", info.uid.ToString()),
+        //      new CHttpParamSlot("modelId", "3"),
+        //      new CHttpParamSlot("gachaCount", (num * 30).ToString())
+        //   );
+        //CHttpMgr.Instance.SendHttpMsg(CHttpConst.BuyGiftGachaBox, new HHandlerShowDraw(EMDrawType.SuperKongTou), pReqParams2, 10, true);
 
       
 
